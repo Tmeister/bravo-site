@@ -1,9 +1,21 @@
 #section-intro {
   color: white;
-  background-color: #02000C;
+  //background: #02000C;
   //background: #232526; /* fallback for old browsers */
   //background: -webkit-linear-gradient(to right, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
   //background: linear-gradient(to right, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  //background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  background-image: linear-gradient(-20deg, #4e4376 0%, #2b5876 100%);
+  //background-image: linear-gradient(-20deg, #97C1E5 0%, #97C1E5 100%);
+  //background-image: linear-gradient(to right, black 0%, #434343 100%);
+}
+
+#particles-intro-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .home-title {
@@ -26,7 +38,7 @@
 }
 
 .intro-subtitle {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -37,7 +49,7 @@
   }
 }
 
-.scroll-to-start{
+.scroll-to-start {
   position: relative;
 }
 
@@ -53,8 +65,8 @@
   height: 34px;
   justify-content: center;
   width: 20px;
-  bottom:-100px;
-  left:50%;
+  bottom: -100px;
+  left: 50%;
   div {
     animation-duration: 1.5s;
     -webkit-animation-iteration-count: infinite;

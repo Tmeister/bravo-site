@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  /**
+   * FullPage
+   */
   $('#full-page').fullpage({
     //Navigation
     menu: '#menu',
@@ -49,14 +52,23 @@ $(document).ready(function() {
     lazyLoading: true,
 
     afterLoad: function(anchor, index) {
-      console.log(anchor);
-      console.log(index);
-      if (index === 2) {
-        $('#fp-nav').addClass('red');
+      /**
+       * Change nav color according with index (light / dark)
+       */
+      if (index === 1) {
+        $('#fp-nav').removeClass('light');
       } else {
-        $('#fp-nav').removeClass('red');
+        $('#fp-nav').addClass('light');
       }
     },
 
   });
+  /**
+   * Particles
+   */
+  particlesJS.load('particles-intro-js', 'scripts/particlesjs.json',function(){});
+
+  /**
+   * Countdown
+   */
 });

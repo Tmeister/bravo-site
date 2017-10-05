@@ -1,9 +1,9 @@
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
-
 @import "extras";
 @import "intro";
+
 body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -14,10 +14,24 @@ body {
   background: green;
 }
 
-#section-crowdfunding {
-  background: red;
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: rgba(255, 255, 255, .5);
 }
 
+#fp-nav.light ul li a span, .fp-slidesNav ul li a span {
+  background: rgba(0, 0, 0, .5);
+}
+
+#fp-nav ul li .fp-tooltip {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: rgba(0, 0, 0, .5);
+  padding: 3px 10px;
+  font-size: .8rem;
+}
+
+#section-crowdfunding {
+  //background: red;
+}
 
 /**
 * Responsive
